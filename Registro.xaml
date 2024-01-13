@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jestrellaExamen.Registro"
+             Title="Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuarios" TextColor="Red" FontSize="16" HorizontalTextAlignment="End" />
+            <Label Text="REGISTRO" TextColor="Blue" FontSize="22" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="FECHA" FontSize="25" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="PAIS" FontSize="25" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="CIUDAD" FontSize="25" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="MONTO INICIAL" FontSize="25" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="PAGO MENSUAL" FontSize="25" Grid.Row="4" Grid.Column="0"/>
+                <DatePicker  x:Name="Fecha" Grid.Row="0" Grid.Column="1"/>
+                <Picker x:Name="Pickpais" Title="Pais"  Grid.Row="1" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Peru</x:String>
+                        <x:String>Colombia</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker x:Name="PickCiudad" Title="Ciudad"  Grid.Row="2" Grid.Column="1">
+                    <Picker.Items>
+                        <x:String>Quito</x:String>
+                        <x:String>Lima</x:String>
+                        <x:String>Medellin</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Entry x:Name="txtinicial" Placeholder="Ingrese un valor del 0 al 1500" Keyboard="Numeric" TextChanged="txtinicial_TextChanged" Grid.Row="3" Grid.Column="1"/>
+                <Entry x:Name="txtmensual" Placeholder="Pago Mensual" Grid.Row="4" Grid.Column="1" IsReadOnly="True"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="NOMBRE" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="APELLIDO" FontSize="20" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="EDAD" FontSize="20" Grid.Row="0" Grid.Column="2"/>
+
+                <Entry x:Name="txtnombre" Placeholder="Nombre" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtapellido" Placeholder="Apellido" Grid.Row="1" Grid.Column="1"/>
+                <Entry x:Name="txtedad" Placeholder="Edad" Grid.Row="1" Grid.Column="2"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnpmensual" Text="Pago Mensual" Clicked="btnpmensual_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnpresumen" Text="Resumen" Clicked="btnpresumen_Clicked" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

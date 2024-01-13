@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jestrellaExamen.Login"
+             Title="Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login" TextColor="Red" FontSize="20" HorizontalOptions="Center" />
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Usuario" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Contrasena" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1"/>
+                <Entry x:Name="txtContrasena" Placeholder="Ingrese la contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+                
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnInicio" Text="Iniciar Sesión" Clicked="btnInicio_Clicked" Grid.Row="0" Grid.Column="0" Margin="20"/>
+                <Button x:Name="btnAcercade" Text="Acerca De" Clicked="btnAcercade_Clicked" Grid.Row="0" Grid.Column="1" Margin="20"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jestrellaExamen.Presentacion"
+             Title="Presentacion">
+    <StackLayout Padding="20" Spacing="10" VerticalOptions="CenterAndExpand">
+        <Label Text="¡Bienvenido a mi presentación profesional!" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+
+        <Image Source="jeff2.jpg" HeightRequest="200" WidthRequest="200" Aspect="AspectFill" />
+
+        <Label Text="Mi nombre es Jefferson German Estrella Villa" FontSize="18" />
+        <Label Text="Soy un apasionado estudiante de ingeniería de sistemas con un firme compromiso hacia la innovación y la resolución de problemas complejos. A lo largo de mi carrera académica, he cultivado una sólida base en las disciplinas fundamentales de la ingeniería de sistemas, abarcando áreas como la programación, la arquitectura de software y la gestión de proyectos. " FontSize="18" />
+
+        <Label Text="Experiencia:" FontSize="20" FontAttributes="Bold" />
+        <Label Text="3 años como analista de sistemas en la Importadora Lina Cony" />
+        <Label Text="3 años como jefe de sistemas en la empresa Phonesupport" />
+
+        <Button Text="Cerrar" Clicked="Button_Clicked" />
+    </StackLayout>
+</ContentPage>

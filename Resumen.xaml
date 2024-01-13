@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jestrellaExamen.Resumen"
+             Title="Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" TextColor="Red" FontSize="16" HorizontalTextAlignment="End" />
+            <Label Text="RESUMEN" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Apellido" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Label Text="Edad" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Label Text="Fecha" FontSize="20" Grid.Row="3" Grid.Column="0"/>
+                <Label Text="Pais" FontSize="20" Grid.Row="4" Grid.Column="0"/>
+                <Label Text="Ciudad" FontSize="20" Grid.Row="5" Grid.Column="0"/>
+                <Label Text="Monto Inicial" FontSize="20" Grid.Row="6" Grid.Column="0"/>
+                <Label Text="Pago Mensual" FontSize="20" Grid.Row="7" Grid.Column="0"/>
+                <Label Text="Pago Total" FontSize="20" Grid.Row="8" Grid.Column="0"/>
+
+                <Entry x:Name="txtnombre" Placeholder="Nombre del estudiante" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtapellido" Placeholder="Apellido del estudiante" Grid.Row="1" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtedad" Placeholder="Edad del estudiante" Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtfecha" Placeholder="Fecha" Grid.Row="3" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtpais" Placeholder="Pais del estudiante" Grid.Row="4" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtciudad" Placeholder="Ciudad del estudiante" Grid.Row="5" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtinicial" Placeholder="Monto inicial" Grid.Row="6" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txtmensual" Placeholder="Pago Mensual" Grid.Row="7" Grid.Column="1" IsReadOnly="True"/>
+                <Entry x:Name="txttotal" Placeholder="Pago " Grid.Row="8" Grid.Column="1" IsReadOnly="True"/>
+            </Grid>
+            <Button x:Name="btnsalir" Text="SALIR" Clicked="btnsalir_Clicked" Grid.Row="0" Grid.Column="1"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
